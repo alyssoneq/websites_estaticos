@@ -1,0 +1,93 @@
+- DTD (DEFINIÇÃO DO TIPO DE DOCUMENTO)
+
+	A primeira parte em um documento html é composta por DOCTYPE. Essa tag
+informa sobre a versão do html
+
+	A DOCTYPE é uma DTD, especifica as regras sintáticas da linguagem. Para
+html 4.01 possui 3 DTDs:
+	* Strict DTD --> inclui todos os elementos e atributos ainda em uso
+	* Transitional DTD --> inclui todos da DTD e os deprecated
+	* Frameset DTD --> inclui todos do transitional + o elemento frame
+
+- declaração de uma strict DTD
+
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+	"http://www.w3.org/TR/html4/strict.dtd">
+
+- declaração de uma transitional DTD
+
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+
+- declaração de uma frameset DTD
+	
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" 
+	"http://www.w3.org/TR/html4/frameset.dtd">
+
+- CABEÇALHO HTML (TAG <HEAD>)
+
+	contem informações sobre o documento
+
+	possíveis tags contidas no head:
+		* title --> título do documento
+		* base --> endereço ou alvo para links do documento
+		* link --> relação entre documento e arquivos externos
+		* meta --> metadados
+		* script --> scripts
+		* style --> estilo dos elementos
+
+	a tag head pode conter um atributo chamado profile, que especifica o
+o local de um ou mais perfis de metadados. O valor é um URI
+
+	
+- a tag <meta>
+
+	Motores de busca  encontram informações armazenadas em um sistema 
+computacional a partir de palavras-chave, como as contidas como metadado na
+tag <meta>.
+
+	é possível indicar o auto de um documento assim:
+		<meta name = "author" content="jorge amado"/>
+
+	os metadados podem ser definidos de duas maneiras:
+		* dentro do documento, por meio da tag <meta>
+		* de fora do documento, ligando-o por meio da tag <link>
+
+	Atributos da tag <meta>:
+		* name
+		* content
+		* scheme
+		* http-equiv
+
+	O atributo scheme as vezes é essencial para impedir ambiguidade de
+dados em diferentes formatos. Exemplo, data pode gerar ambiguidade, então com
+o atributo scheme isso pode ser resolvido:
+	
+	<meta scheme="Month-Day-Year" name="publish_date" content="10-9-97"/>
+	
+	Dessa forma, o valor 10-9-97 já tem seu formato definido pelo atributo
+scheme, que nesse caso foi mês - dia - ano
+
+	o atributo "http-equiv" pode ser usado no lugar do atributo para gerar
+interaçoes com o protocolo http. Exemplo:
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	Nesse exemplo, ajuda a identificar a mídia do documento, para auxiliar 
+o browser a exibir caracteres especiais
+
+	outro exemplo de uso do atributo http-equiv:
+
+	<meta http-equiv="Pragma" content="no-cache" />
+
+	Nesse outro exemplo, a propriedade Pragma com valor no-cache indica
+que o browser nao deve armazenar a pagina em cache
+
+
+- tag <link>
+
+	define relação entre documento e algum recurso externo. Comumente
+utilizado para ligar um documento a um CSS. Exemplo:
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/w3c.css"/>
+
