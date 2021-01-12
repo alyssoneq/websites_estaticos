@@ -91,3 +91,109 @@ utilizado para ligar um documento a um CSS. Exemplo:
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/w3c.css"/>
 
+- tag <base>
+
+	Especifica um endereço ou um alvo padrão para todos os links na página.
+Endereço é feito no atributo href e o alvo com o atributo target.
+
+	o atributo href indica que todos os links devem direcionar para o
+endereço informado. Já o atributo target indica como o endereço é aberto.
+
+- tag <script>
+
+	Usada para especificar scripts de javascript que atuam no documento. 
+Pode conter o script diretamente ou através do atributo "src".,
+
+	É possível usar uma tag <noscript> para o caso de browsers sem suporte
+ao javascript, logo realizando alguma ação pré-determinada
+
+- CORPO (TAG <BODY>)
+
+
+- quebra de linhas
+
+	para realizar quebra de linha, utiliza-se a tag <br/> ou <br></br>.
+No segundo caso, o texto fica entre as tags.
+
+- linha horizontal
+
+	Separador especificado pela tag <hr/>. Esse elemento possui atributos:
+		* size --> altura em pixels
+		* width --> largura em percentual
+		* align --> posição
+
+	Os atributos foram removidos no html5
+
+- tags de formatação
+
+	Para criar um parágrafo, a tag <p> é utilizada
+
+	Algumas outras tags de formatação de texto:
+		* <b> --> negrito
+		* <u> --> sublinhado
+		* <s> --> riscado
+		* <i> --> italico
+		* <small> --> fonte menor
+		* <sub> --> subescrito
+		* <sup> --> superescrito
+
+- caracteres especiais
+
+	para escrever um caractere especial, deve usar sequencias de escape.
+As sequencias são compostas por 3 partes:
+	* inicio --> &
+	* meio --> texto com caractere especial
+	* fim --> ;
+
+	Entidades e seus caracteres especiais:
+		* &lt; --> "<"
+		* &gt; --> ">"
+		* &amp; --> "&"
+
+- inserção de figuras
+
+	Imagens são inseridas no corpo do html com as tags:
+		* <img/>
+		* <object>
+
+	A tag <img/> pode possuir 5 atributos:
+		* src --> indica caminho e formato da imagem
+		* alt --> descrição da imagem ao passar curso acima
+		* longdesc --> link para descrição completa da imagem
+		* width --> largura da imagem
+		* height --> altura da imagem
+
+	A tag <object> pode inserir figuras, videos e applets. Para inserir
+imagem basta usar os atributos:
+		* data --> URI da localização da imagem
+		* type --> formato da imagem
+
+	Exemplos de tags equivalentes para img e object:
+
+	<img src="URI" width="100" height="100" alt="descrição"/>
+	
+			ou
+
+	<object data="URI" type="image/jpg" width="100" height="100"> 
+		descrição 
+	</object>
+
+
+- construção de tabela
+
+	Tabelas são definidas com a tag <table>...</table>. A divisória ocorre
+em linhas por meio da tag <tr>...</tr> e colunas com a tag <td>...</td>
+
+	A tag table possui alguns elementos que cairam em desuso no html5:
+		* border --> borda da tabela 
+		* width --> largura da tabela (em percentual)
+		* summary --> descrição da tabela
+
+	A tag <tr> pode conter a tag <th>, para indicar título da linha/coluna.
+O titulo aparece em negrito e centralizado.
+
+	As tags <tr> e <td> possuem os seguintes atributos:
+		* colspan --> quantidade de celulas ocupadas
+		* rowspan --> quantidade de celulas ocupadas
+
+	
