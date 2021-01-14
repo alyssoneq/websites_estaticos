@@ -189,3 +189,102 @@ próxima prevalece sobre a mais distante
 		* entre outros
 
 
+- CORES
+
+	As cores são definidas por duas propriedades:
+		* color
+		* background-color
+
+- abreviação de código hexadecimal
+
+	Um código hexadecimal pode ser abreviado quando há repetição de digitos.
+Exemplo:
+
+	h1 {color: #00FFCC;}
+
+		ou
+
+	h1 {color: #0FC;}
+
+- cor RGB definida com porcentagem
+
+	Uma cor definida por RGB pode ser feita com valores em porcentagem:
+		
+		h1 {color: rgb(0,255,195);}
+
+		h1 {color: rgb(0%, 100%, 78%);}
+
+	Não é permitido misturar valor percentual com normal
+
+- esquema de cores
+
+	Tambem chamado de círculo de cores, é um diagrama circular que 
+exibe diferentes cores e mostra a relação entre elas. O esquema permite 
+escolher cores que conmbinam entre si
+
+	Website utilizado para realizar definição de palete de cores:
+
+	http://paletton.com/
+
+	http://www.colorhunter.com/
+
+- ESTILIZAR TABELAS
+
+	Alguns elementos podem ser utilizados para estilizar tabelas
+
+- border
+
+	Especifica a largura, o estilo e a cor da borda externa da tabela
+
+	Valores da propriedade:
+		* border-width
+		* border-style
+		* border-color
+
+- border-collapse
+
+	determina se as bordas são ou não duplas. Valores possíveis:
+		* none
+		* collapse
+
+- border-radius
+
+	Determina o nível da borda. Valores permitidos:
+		* cm
+		* px
+		* %
+- width
+
+	Define a largura de cada celula ou tabela. Valores permitidos:
+		* cm
+		* px
+		* %  (valor de 100% = tabela renderiza na largura da janela)
+
+- height
+
+	Define a altura de cada célula ou tabela. Valores permitidos:
+		* cm
+		* px
+		* %
+
+- text-align
+
+	Determina o alinhamento horizontal do texto. Valores possíveis:
+		* center
+		* right
+		* left
+
+- vertical-align
+
+	Determina a poisção vertical do texto. Valores usuais:
+		* bottom
+		* top
+		* middle
+
+- box-shadow
+
+	Define a sombra ao redor da borda. Valores dessa propriedade:
+		* px, cm ou %
+		* cor (hexadecimal, rgb ou nome da cor)
+
+
