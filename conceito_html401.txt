@@ -196,4 +196,73 @@ O titulo aparece em negrito e centralizado.
 		* colspan --> quantidade de celulas ocupadas
 		* rowspan --> quantidade de celulas ocupadas
 
+- FORMULÁRIOS
+
+	Os formulários são definidos pela tag <form>...</form>
+
+	Atributos importantes da tag <form>:
+		* action="URI" --> dita para onde enviar dados do form
+		* enctype --> define formato de codificaçao dos dados
+		* method=get|post --> define método HTTP de envio dos dados
+
+- inserção de texto com formulários
+
+	O usuário pode enviar texto por meio das tags:
+		* <input> --> envia 1 linha
+		* <textarea> --> envia texto com mais de 1 linha
+
+	Exemplo com o tag <input>:
 	
+	<input type="text" name="nome">
+
+	o atributo type="text" informa que texto será inserido. Já o atributo
+name="nome" é para nomear o input, então ser referenciado pelo nome.
+
+	Exemplo de texto oculto no formulário, usa-se type="password":
+
+	<input type="password" name="senha"/>
+
+	Exemplo de texto longo inserido pelo usuário:
+
+	<textarea naome="nome" rows="10" cols="40">Digite aqui</textarea>
+
+- tag <label> para criar rótulos
+
+	Os rótulos melhoram a usabilidade, pois ao clicar no rótulo, o browser
+colocar o curso na caixa de controle
+
+	Exemplo de utilização do label:
+
+	<label for="senha"> Senha: </label>
+	<input type="password" name="senha"/> 
+
+- botões
+
+	Existem 3 tipos de botões:
+		* submit --> envia formulário
+		* reset --> reseta todos os campos para valores iniciais
+		* push --> associa comportamento com scripts
+
+	3 exemplos de botões:
+	
+	<input type="submit" value="enviar"/>
+
+	<input type="reset" value="Limpar"/>
+	
+	<button type="submit"> Enviar imagem <img src="img.jpg"></button>
+
+- MENUS
+
+	Menus fornecem um coonjunto de opções ao usuário. As tags <select>,
+<optgroup> e <option> são usadas para definir menus
+
+
+- FRAMES
+
+	Os frames dividem a página para dispor o conteudo de varias documentos.
+A tag <frameset> </frameset> deve ser colocada no lugar da tag <body>. NÃO HÁ
+COMO a tag <frameset> e tag <body> coexistirem em um mesmo documento.
+
+	No início do documento deve ser inserida a DTD para o frameset funcionar
+
+
