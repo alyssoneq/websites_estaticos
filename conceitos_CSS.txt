@@ -1,0 +1,191 @@
+- PROPRIEDADE BACKGROUND
+
+	Propriedade para definir as características do plano de fundo
+
+- background-color
+
+	Define cor de plano de fundo. O valor pode ser:
+		* hexadecimal --> #FFFFFF
+		* RGB --> rbg(255,235,0)
+		* nome da cor --> red, cian, green...
+		* transparente --> transparent
+
+- background-image
+
+	define imagem para plano de fundo. O valor é uma URL
+
+- background-repeat
+
+	Define a maneira como a imagem de fundo é posicionada. Os valores podem:
+		* no-repeat
+		* repeat
+		* repeat-y
+		* repeat-x
+
+- background-position
+
+	Define como e onde a imagem de fundo é posicionada. Pode ter valores:
+		* x-pos y-pos
+		* x-% y-%
+		* top left
+		* top center
+		* entre outros
+
+- background
+
+	Maneira abreviada de todas as propriedades. Pode assumir os valores
+possíveis de todos as outras propriedades acima
+
+
+- PROPRIEDADE FONTE
+
+	Define as características das letras do texto
+
+- color
+
+	Define a cor da fonte. Possíveis valores:
+		* hexadecimal
+		* rgb
+		* nome da cor
+
+- font-family
+
+	Define o tipo de fonte. Possíveis valores:
+		* family-name --> arial, verdana, helvetica...
+		* generic-family --> serif, cursive, fantasy...
+		* inherit
+
+- font-size
+
+	Define o tamanho da fonte. Possíveis valores:
+		* xx-small
+		* x-small
+		* small
+		* medium
+		* large
+		* x-large
+		* xx-large
+		* smaller
+		* larger
+		* lenth(em,px)
+		* %
+		* inherit
+
+- font-style
+
+	Define o estilo da fonte. Possíveis valores:
+		* normal
+		* italic
+		* oblique
+		* inherit
+
+- font-variant
+
+	Define fontes maiúsculas de menor altura. Possíveis valores:
+		* normal
+		* small-caps
+		* inherit
+
+- font-weight
+
+	Define a intesidade do negrito da fonte. Possíveis valores:
+		* normal
+		* bold
+		* bolder
+		* lighter
+		* 100 a 900
+		* inherit
+
+- font
+
+	Maneira abreviada de todas as propriedades font
+
+- o valor inherit
+
+	Valor utilizado para herdar o valor de um elemento pai
+
+- PROPRIEDADE LINKS
+
+	As propriedads para links possibilitam efeitos para link visitado, não
+visitado, ativo ou no estado hover.
+
+	Os linnks possuem 4 seletores através de pseudoclasses. Uma pseudoclasse
+é usada para adicionar efeitos diferentes ao mesmo elemento.
+
+	No caso da tag <a>, existem 4 pseudoclasses:
+		* a:link --> define o estilo do link no estado inicial
+		* a:visited --> estilo do link visitado
+		* a:hover --> estilo do link quando mouse está sobre ele
+		* a:active --> estilo do link que já foi clicado (ativo)
+
+- sintaxe para seletor com pseudoclasse
+
+	seletor:pseudo-classe {propriedade: valor}
+
+			ou
+
+	seletor.classe:pseudo-classe {propriedade: valor}
+
+	Como exemplo podemos ter:
+
+	a.classe1:link , a.classe1:visited {text-decoration: udnerline}
+
+	a.classe1: hove {
+	  text-decoration: underline;
+	  color: #FF0000;
+	}
+
+- efeito cascata no link
+
+	É necessário ficar atento para o efeito cascata. Sempre a regra mais
+próxima prevalece sobre a mais distante
+
+	A ordem de declaração das pseudoclasses deve ser:
+		* a:link
+		* a:visited
+		* a:hover
+		* a:active
+
+- PROPRIEDADE LISTAS
+
+	As propriedades que estilizam listas permite escolher:
+		* marcador de lista ordenada e não ordenada
+		* imagem como marcador
+		* definir posição do marcador
+
+- list-style
+
+	Define todas as propriedades. Deve-se seguir uma ordem:
+		* list-style-image
+		* list-style-position
+		* list-style-type
+
+- list-style-image
+
+	Define imagem como marcador. Valores:
+		* URL
+		* none
+
+- list-style-position
+
+	Define se marcador deve aparecer indentado:
+		* inside --> indentado com texto a direita
+		* outside --> indentado com texto acima
+
+- list-style-type
+
+	Define o tipo de marcador
+
+	Marcadores para listas não ordenadas:
+		* none --> sem marcador
+		* disc --> circulo pintado
+		* circle --> circulo vazio
+		* square --> quadrado
+
+	Marcadores para listas ordenadas:
+		* decimal (1,2,3...)
+		* decimal-leading-zero (01,02,03...)
+		* armenian georgian (an, ban, gan,...)
+		* entre outros
+
+

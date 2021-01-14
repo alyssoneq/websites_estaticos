@@ -1,0 +1,39 @@
+- VANTAGENS DE USAR O XHTML
+
+	Várias são as vantagens ao usar xhtml:
+		* estabilidade --> pouco atualizada
+		* compatibilidade --> padrao nos browsers
+		* desempenho --> browser nao decide erro de código
+		* interoperabilidade e portabilidade
+		* simplicidade --> preocupa apenas com conteudo, e nao aparencia
+
+- TAGS
+
+	Toda tag de abertura deve conter uma de fechamento. Exemplo:
+
+		quebra de linha --> <br></br>  ou <br/>
+		régua horizontal --> <hr></hr> ou <hr/>
+
+	Nunca se deve escrever:
+
+		quebra de linha --> <br>
+		régua horizontal --> <hr>
+
+- ATRIBUTOS
+
+	Nunca escrever valor de atributo sem aspa dupla, pois são tratados
+como String
+
+	
+- PONTOS DE ANCORA
+
+	Diferente do html, no xhtml uma ancora é feita com o atributo id.
+
+	<a id="topo"> Voltar ao topo </a>
+
+- TAG <IMG>
+
+	Essa tag não pode estar sozinha no corpo <body>, logo deve estar entre
+outras tags como <p></p>
+
+
