@@ -288,3 +288,200 @@ escolher cores que conmbinam entre si
 		* cor (hexadecimal, rgb ou nome da cor)
 
 
+- MODELOS DE CAIXAS
+
+	Termo caixa é utilizado no contexto de design e layout. Caixas são
+retângulos a serem exibidos na tela ou impressos. As caixas consistem de margens
+, bordas, espaçamentos (padding) e conteúdo.
+
+	Permite colocar bordas nos elementos e espaça-los de maneira uniforme.
+Cria layout geral para documento
+
+	Elementos de uma caixa:
+		* margin --> area ao redor da borda ( distancia entre caixas)
+		* border --> linha decorativa ao redor do elemento
+		* padding --> distancia entre borda e conteudo
+		* content --> conteudo da caixa
+
+
+- border
+
+	Especifica 3 propriedades para bordas:
+		* border-width
+		* border-style
+		* border-color
+
+- border-bottom
+
+	Especifica propriedades para a borda inferior:
+		* border-bottom-width
+		* border-bottom-style
+		* Border-bottom-color
+
+- border-left
+
+	Especifica as propriedades para a borda esquerda:
+		* border-left-width
+		* border-left-style
+		* border-left-color
+
+- border-right
+
+	Especifica as propriedads para a borda direita:
+		* border-right-width
+		* border-right-style
+		* border-right-color
+
+- border-style
+
+	Especifica o estilo das 4 bordas:
+		* none
+		* hidden
+		* dotted
+		* dashed
+		* solid
+		* double
+		* groove
+		* ridge
+		* inset
+		* outset
+
+	Essa propriedade pode ser especificada em termos de até 4 valores.
+Exemplos:
+
+	1 valor = todas as bordas assumem esse valor
+
+	p {border-style: dotted;}
+
+	2 valores = bordas de cima / baixo e bordas esquerda/direita
+
+	p {border-style: dotted solid;}
+
+	4 valores = bordas de cima, direita, baixo e esquerda
+
+	p {border-style: dotted solid double dashed;}
+
+- border-top
+
+	Especifica as propriedades para a borda superior:
+		* border-top-width
+		* border-top-style
+		* border-top-color
+
+- border-width
+
+	Especifica a espessura das 4 bordas:
+		* thin
+		* medium
+		* thick
+		* tamanho
+
+- margin
+
+	especifica as propriedads de margem, na ordem:
+		* superior
+		* direita
+		* inferior
+		* esquerda
+
+	Quando varias caixas são definidas, as margens são sobrepostas. Resulta
+em distância igual à maior das margens
+
+- padding (espaçamento)
+
+	Determina a distancia entre a borda e conteudo. Assume o plano de fundo
+definido para o elemento
+
+	Os valores definidos são, na ordem:
+		* superior
+		* direita
+		* baixo
+		* esquerda
+
+
+- dimensões dos elementos
+
+	É possível determinar as dimensões de todos os elementos.
+As propriedades das dimensões são:
+	* height --> altura (auto, length, %)
+	* max-height --> altura maxima (none, length, %)
+	* max-width --> largura maxima (none, length, %)
+	* min-heigth --> altura minima (length, %)
+	* min-width --> largura minima (length, %)
+	* width --> largura (auto, length, %)
+
+	Cuidado ao utilizar essas propriedades, pois espaçamentos devem caber
+dentro das dimensões definidas. Uma solução é usar o valor "auto", que indica
+ao elemento que deve preencher o espaço que falta
+
+- posicionamento
+
+	A posição dos elementos pode ser determinada com as propriedades:
+		* bottom --> posição vertical inferior (auto, length, %)
+		* clip --> tamanho de elemento posicionado com metodo absolute
+		* cursor --> determina tipo de cursor ao passar por elemento
+		* left --> posição horizontal esquerda (auto, length, %)
+		* overflow --> determina ação com elemento maior que a caixa
+		* position --> determina método de posicionamento
+		* right --> posição horizontal direita (auto, length, %)
+		* top --> posição vertical superior (auto, length, %)
+		* z-index --> dita se elemento sobrepõe ou é sobreposto 
+
+	Os possíveis métodos de posicionamento são:
+		* static --> elemento nao deve ser afetado por posicionamento
+		* fixed --> fixa elemento visível mesmo ao rolar pagina
+		* relative --> elemento é posicionado em relação ao fluxo
+		* absolute --> elemento posicionado em relação ao elemento pai
+
+- z-index
+
+	Propriedade z-index especifica se elemento deve ser colocado na frente
+ou por trás de outros, quando elementos usam método de posicionamento que 
+permite a sobreposição.
+
+	Essa propriedade assume valores inteiros. O elemento como o maior valor
+é o que estará acima. Caso o elemento não tenha a propriedade z-index, então
+o elemento escrito por último no html será posto acima dos demais.
+
+- propriedade display
+
+	os elementos do html são de 2 tipos:
+		* block --> largura definida / finalizado com quebra de linh
+		* inline --> não força quebra de linha
+
+	A propriedade display pode modificar o tipo dos elementos, ao definir
+valores como:
+	* inline --> define elemento nao terá quebra de linha
+	* block --> define que elemento terá quebra de linha
+	* none --> elemento nao será mostrado
+
+	Valor inline é muito utilizado para por elementos lado a lado
+
+- propriedade float
+
+	Essa propriedade permite que elementos sejam empurrados para direita
+ou esquerda, e demais elementos fiquem ao seu redor. Muito utilizada para
+posicionar imagens
+
+	O elemento com a propriedade float é posicionado à direita ou à esquerda
+e o seguinte a ele é colocado ao lado. Elementos antes do float nao afetam-se
+
+	é possível posicionar figura ao lado da outra e criar uma galeria de 
+imagens ao usar a propriedade float. Facilita eliminando necessidade de 
+posicionar cada figura individualmente.
+
+	Valores de float:
+		* left
+		* rigth
+		* none
+		* inherit
+
+	Para interagir com um elemento float, usa-se a propriedade clear. Essa
+especifica o lado de um elemento para impedir um elemento float. Os valores:
+		* left
+		* right
+		* both
+		* none
+		* inherit
+
+
