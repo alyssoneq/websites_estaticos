@@ -1,0 +1,186 @@
+- DEFINIÇÕES
+
+	O layout é a estrutura geral da aparencia do site. Nele define-se o
+posicionamento dos conteúdos:
+	* slogan
+	* menus
+	* conteudo principal
+	* conteudo secundario
+	* dentre outros
+
+	No layout, geralmente, a pagina é divida em partes (containers) como:
+		* header
+		* main nav
+		* contents
+		* menu
+		* footer
+
+	Tipos de layout são classificados por 2 critérios:
+		* quantidade de colunas (1,2,3, ou mais)
+		* largura da página:
+			* largura fixa
+			* líquido (ou fluido)
+			* elástico
+			* hibrido
+
+- largura fixa
+
+	A página e suas colunas possuem largura fixa. Definida pela propriedade
+width. 
+
+	Vantagem --> todos os elementos estão dispostos de forma previsível.
+
+	Desvantagem  --> usuario com janela menor precisa rolar barra de 
+navegação, para ver conteudo por inteiro. Bem como, tela muito grande gera
+espaços em branco
+
+- líquido
+
+	Larguras definidas em porcentagem 
+
+	vantagem --> conteudo se acomoda à largura da janela, otimiza espaço
+
+	desvantagens:
+		* cuidado no posicionamento para nao haver sobreposição
+		* comprimento das linhas de texto podem gerar desconforto
+
+- elástico
+
+	larguras definidas com base no tamanho das fontes, com a unidade "em"
+
+	vantagens:
+		* largura se comporta da mesma forma que o tamanho do texto
+		* util para acessibilidade para necessidades especiais da visão
+
+	desvantagens:
+		* nem sempre há bom aproveitamento do espaço horizontal 
+		* aparecimento da barra de rolagem horizontal
+
+- híbrido
+
+	largura da página, colunas e demais elementos definidos em "ems". Além
+de largura máxima em porcentagem 
+
+	ou 
+
+	define larguras em porcentagem e largura maxima em "em"
+
+- PASSOS PARA DEFINIR LAYOUT
+
+	1. escolher e nomear os containers
+	2. criar a marcação para containers
+	3. escolher metodo de posicionamento para containers
+	4. inserir e estilizar conteúdos
+	5. ligar CSS
+	6. CSS para impressão
+
+- escolher e nomear os containers do layout
+
+	container é uma caixa para agrupar varios elementos de maneira uniforme.
+
+	O nome dos containers deve ser associado à finalidade dele, e não à
+aparencia. Exemplos:
+		* container
+		* header
+		* mainnav
+		* menu
+		* contents
+		* footer
+
+- criar marcação para containers
+
+	Os containers são marcados com a tag <div>. Junto com as atributos id e
+class, é possível definir a estrutura do documento.
+
+	Escolher id ou class como atributo:
+		* container aparece uma vez na página --> usar id
+		* container mais de uma vez na página --> usar class
+
+	Tradicionalmente, uma tag <div> nomeada container é criada primeiro,
+para entao aninhar outras em seu interior.
+
+- escolher e especificar o método de posicionamento para containers
+
+	posicionamento do container:
+	
+	#container{
+		margin: 10px auto;
+		width: 650px;
+	}
+
+	posicionamento do header:
+
+	#header {
+		height: 50px; 
+	}
+
+	posicionamento do mainnav:
+	
+	#mainnav{
+		height: 30px;
+	}
+
+	posicionamento do menu:
+
+	#menu {
+		width: 200px;
+		float: right; --> isso fará o proximo div ficar à esquerda
+		height: 500px;
+	}
+
+	posicionamento do contents:
+	
+	#contents{
+		height: 500px;
+	}
+
+	posicionamento do footer:
+
+	#footer {
+		height: 30px;
+	}
+
+- inserir e estilizar conteúdos
+
+	Conteudo deve ser marcado de acordo com a sua semântica, ou seja, usar
+as tags:
+
+	* h1-h6 para títulos
+	* p para textos
+	* ul para listas
+	* etc
+
+	É boa prática testar o layout em diferentes navegadores
+
+- diretrizes para melhorar a organização do css
+
+	comente o código com os operadores /* */
+
+	Tente usar o mínimo de ids e classes possíveis
+
+	Faça estilização de elementos usando seletores descendentes:
+		* estilize o container primeiro
+		* depois as listas
+		* então itens das listas
+		* assim em diante
+
+	Exemplo de organização:
+
+	/* container header */
+	   #header {}
+	   /* listas do container header */
+	   #header ul {}
+	   #header ul li {}
+	   
+	   /* links do container header */
+	   #header a {}
+	   #header li a:link {}
+
+- cuidados com o tamanho da fonte
+
+	Fontes pequenas demais podem gerar dificuldade de leitura. Portanto,
+opte por opções a seguir:
+
+	1. Não defina tamanho para fontes - browser determina
+	2. Use unidades relativas para definir tamanho das fontes:
+		* utilizar porcentagem ou unidade em "em"
