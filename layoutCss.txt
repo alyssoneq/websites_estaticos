@@ -184,3 +184,65 @@ opte por opções a seguir:
 	1. Não defina tamanho para fontes - browser determina
 	2. Use unidades relativas para definir tamanho das fontes:
 		* utilizar porcentagem ou unidade em "em"
+
+	Tamanhos relativos para fontes são fáceis de implementar ao:
+		* aplicar font-size aos containers
+		* aplicar font-size ao body
+		* aplicar fonte-size a cada elemento individualmente
+
+	Exemplo de font-size aos containers e seus elementos:
+
+	#header h1 {
+	  font-size: 200%;
+	}
+
+	#content h1{
+	  font-size: 100%;
+	}
+
+	Exemplo de font-size ao body:
+
+	body{
+	  font-size: 80%;
+	}
+
+	Exemplo de font-size aplicado diretamento aos elementos HTML:
+
+	p {
+	   font-size: 85%;
+	}
+
+	h1 {
+	    font-size: 150%
+	}
+
+
+	Deve-se atentar que os valores de elementos específicos ou mais 
+externos ficam relativos ao contexto. Exemplo com lista aninhada:
+
+	ul { font-size: 85%;}
+	ul ul { font-size: 200%}
+
+	A segunda lista "ul ul" vai ter fonte de tamanho 200% dos 85% do "ul",
+ou seja, fonte com tamanho 160%.
+
+- Ligar o CSS
+
+	Exemplo de como linkar um CSS ao arquivo html:
+
+	<link rel="stylesheet" href="nomeDoArquivo.css" media="screen" >
+
+- Criar um CSS para impressão
+
+	Geralmente é conveniente ter uma folha de estilo diferenciado para 
+impressão. Por exemplo, colocar todos os itens pretos e a cor de plano de fundo
+branca. Isso é feito com o atributo media = "print"
+
+	<link rel="stylesheet" href="print.css" media="print">
+
+	Contudo, caso não haja necessidade ou deseje-se utilizar o mesmo layout
+da página para a impressão, então basta utilizar o atributo com os valores
+
+	media = "screen, print" ou media = "all"
+
+
